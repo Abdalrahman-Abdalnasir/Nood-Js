@@ -10,7 +10,7 @@ const userSchema = new Schema({
   age: Number,
   country: String,
   gender: String,
-});
+},{ timestamps: true });
 
 // Create model
 const User = mongoose.model('customer', userSchema);
